@@ -5,6 +5,8 @@ import Main from "./UI/Main"
 import Content from "./UI/Content"
 import Profile from "./components/Profile/Profile"
 import Stats from "./components/Stats/Stats"
+import Team from "./components/Team/Team"
+import Event from "./components/Event/Event"
 
 
 function App() {
@@ -33,7 +35,10 @@ function App() {
         <Main>
           <Content>
             <Stats darkMode={darkMode}/>
-            <div className="flex flex-col gap-3 lg:flex-row"></div>
+            <div className="flex flex-col gap-3 lg:flex-row">
+              <Team/>
+              <Event/>
+            </div>
           </Content>
         
           <Profile/>
