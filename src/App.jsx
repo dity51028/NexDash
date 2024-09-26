@@ -1,6 +1,9 @@
 import { useState } from "react"
 import Header from "./components/Header/Header"
 import Sidebar from "./components/Sidebar/Sidebar"
+import Main from "./UI/Main"
+import Content from "./UI/Content"
+import Profile from "./components/Profile/Profile"
 
 
 function App() {
@@ -24,8 +27,18 @@ function App() {
         toggleDarkMode={toggleDarkMode} 
         darkMode={darkMode} 
         toggleIsSidebar={toggleIsSidebar}/>
-        <Sidebar />
+        <Sidebar isSidebarOpen={isSidebarOpen}/>
+
+        <Main>
+          <Content>
+            Main content
+          </Content>
+        
+          <Profile/>
+        </Main>
+        
     </div>
+    
     </>
   )
 }

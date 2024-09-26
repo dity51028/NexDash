@@ -14,11 +14,11 @@ const Header = ({darkMode,toggleDarkMode,toggleIsSidebar}) => {
         <div className='px-3 py-3 lg:px-5 lg:pl-3'>
             <div className='flex items-center justify-between '>
                 <div className='flex items-center justify-start rtl:justify-end'>
-                    <button className='inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-200  focus:ring-8 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600  '>
+                    <button className='inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-200  focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600  'onClick={toggleIsSidebar}>
                         <RiMenu2Line className=' md:hidden text-2xl'/>
                         
                     </button>
-                    <a href="#" className='flex ms-2 md:me-24' onClick={toggleIsSidebar}>
+                    <a href="#" className='flex ms-2 md:me-24' >
                             <MdDashboard className='h-8 me-3 text-3xl text-violet-500'/>
                             <span className='self-center md:text-3xl font-bold text-2xl whitespace-nowrap dark:text-white '>NexDash</span></a>
                 </div>

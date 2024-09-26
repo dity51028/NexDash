@@ -161,7 +161,7 @@ export const events = [
 // ------- ==
 // chart data, later we will use this!!!
 
-// const options = {
+// export const options = {
 //   series: [44, 55, 41],
 //   options: {
 //     chart: {
