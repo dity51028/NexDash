@@ -4,6 +4,7 @@ import Sidebar from "./components/Sidebar/Sidebar"
 import Main from "./UI/Main"
 import Content from "./UI/Content"
 import Profile from "./components/Profile/Profile"
+import Stats from "./components/Stats/Stats"
 
 
 function App() {
@@ -31,7 +32,8 @@ function App() {
 
         <Main>
           <Content>
-            Main content
+            <Stats darkMode={darkMode}/>
+            <div className="flex flex-col gap-3 lg:flex-row"></div>
           </Content>
         
           <Profile/>
